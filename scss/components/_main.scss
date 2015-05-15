@@ -1,0 +1,85 @@
+main {
+	&>aside, &>div {
+		padding: 20px 20px 20px 10px;
+	}
+
+	aside {
+		border-right: 1px solid $smoke;
+	}
+
+	h3, h4 {
+		margin-left: 10px;
+	}
+
+	h4 {
+		margin-top: 10px;
+	}
+
+	&.row .row {
+		margin: 0;
+	}
+
+	.activity-wrap {
+		.activity {
+			padding: 30px 20px 20px;
+			border-bottom: 1px solid $gainsboro;
+
+			&>div {
+				display: inline-block;
+			}
+
+			.activity-thumb {
+				margin-right: 50px;
+			}
+
+			.activity-personalinfo {
+				margin-bottom: 20px;
+
+				p {
+					margin-bottom: 0;
+				}
+
+				.icon {
+					position: relative;
+
+					&:hover {
+						&:before {
+							@extend .faa-ring.animated;						
+						}
+					}
+
+					&:before {
+						position: absolute;
+						left: -35px;
+						font-size: 25px;
+					}
+				}
+			}
+
+			.activity-card {
+				width: 600px;
+				height: 302px;
+				border: 1px solid $steel;
+				margin-bottom: 50px;
+
+				h4, p {
+					margin-left: 30px;
+				}
+
+				.activity-card-infobox {
+					padding: 30px 10px;
+				}
+
+				.social {
+					margin: 30px 0 0 10px;
+
+					a {
+						font-size: rem-calc(25);
+					}
+				}
+
+			}
+		}
+	}
+
+}

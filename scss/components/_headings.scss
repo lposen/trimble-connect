@@ -1,0 +1,10 @@
+.headings {
+    box-shadow: 2px 2px 2px $oil;
+    position: relative;
+    z-index: 2;
+    
+    h2 {
+        color: $darkBlue;
+        padding: 20px 10px 5px;
+    }
+}

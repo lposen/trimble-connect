@@ -1,0 +1,18 @@
+header {
+	.icon {
+		margin-right: 5px;
+	}
+
+	a {
+		&:hover {
+			.icon-cog {
+				@extend .faa-spin.animated.faa-fast;
+			}
+
+			.icon-office {
+				@extend .faa-wrench.animated.faa-fast;
+			}
+
+		}
+	}
+}
